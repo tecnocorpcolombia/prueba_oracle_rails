@@ -24,7 +24,7 @@ default: &default
 
 development:
   <<: *default
-  database: scan-bct.koba.int:1521/bctphps.koba.int:POOLED
+  database: 10.90.0.12:1521/prueba
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -57,6 +57,6 @@ test:
 #
 production:
   <<: *default
-  database: prueba_oracle_rails_production
-  username: prueba_oracle_rails
-  password: <%= ENV['PRUEBA_ORACLE_RAILS_DATABASE_PASSWORD'] %>
+  database: 10.90.0.12:1521/prueba
+  # username: prueba_oracle_rails
+  # password: <%= ENV['PRUEBA_ORACLE_RAILS_DATABASE_PASSWORD'] %>
